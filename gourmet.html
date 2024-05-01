@@ -8,63 +8,605 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" href="./img/marines.svg" sizes="32x32">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100 m0">
   <main class="flex-shrink-0">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center">
-      <div class="col-3 m-3">
-        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt=""></a>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center position-fixed w-100 z-3 pb-0 position-relative">
+      <div class="col-10 col-md-6 col-lg-3 m-1 m-md-3 z-3">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="" class="link-offset-1"></a>
       </div>
-      <div class="container-fluid p-0">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid p-0 bg-light gb-menu z-2">
+        <button class="navbar-toggler border-0 pb-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-2">
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" aria-current="page" href="./philosophy.html">球団情報</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./news.html">ニュース</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./event.html">イベント</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./gourmet.html">グルメ</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" aria-current="page"
+                href="./philosophy.html">球団情報</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light fw-bold" href="./goods.html">グッズ</a>
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./news.html">ニュース</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./event.html">イベント</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./gourmet.html">グルメ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./goods.html">グッズ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5 d-block d-lg-none" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
             </li>
           </ul>
         </div>
       </div>
+      <div class="position-absolute top-5 end-0 m-3 d-none d-lg-flex"><a class="btn d-flex align-items-center" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
     </nav>
 
+    <div class="container mb-3 mt-6 mt-lg-9">
+      <div class="row justify-content-center">
+        <div class="col-38 col-lg-24">
+          <img src="./img/gourmet/hl_gourmet01_02.jpg" alt="" class="w-100">
+        </div>
+
+        <div class="col-38 col-lg-33 mt-3 mt-lg-5">
+          <p>ZOZOマリンスタジアムには楽しいグルメがたくさん！<br>
+            定番メニューや球場限定カクテルに加え、マリーンズ選手のオリジナルメニュー「PLAYERS COLLAB MENU」など、来場の思い出になること間違いなし！
+          </p>
+        </div>
+
+        <div class="col-38 d-flex justify-content-center mt-3">
+          <button
+            class=" col-lg-20 position-relative btn border-dark btn-outline-light rounded-pill d-flex justify-content-center ps-lg-4">
+            <span
+              class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center py-2"
+              href="#">
+              <img src="./img/gourmet/logo_mobileOrder.svg" alt="" class="w-10"><span
+                class="ms-lg-5 fw-bold">モバイルオーダーについて</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                class="bi bi-chevron-right position-absolute end-5"
+                aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill-rule="evenodd"
+                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                </path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ボタン群 -->
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-38 col-lg-33 mt-3">
+          <div class="row d-flex justify-content-between">
+            <div class="col-20 col-lg-13 mt-3 p-0">
+              <button class="position-relative btn btn-dark d-flex justify-content-center px-2 w-100">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-left py-2"
+                  href="#">
+                  <img src="./img/gourmet/icon_playersCollabMenu01.png" alt="" class="w-15">
+                  <span class="fs-7 d-lg-none text-start">PLAYERS COLLAB <br>MENU</span>
+                  <span class="d-none d-lg-flex">PLAYERS COLLAB MENU</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="col-20 col-lg-13 mt-3 p-0">
+              <button class="position-relative btn btn-dark d-flex justify-content-center px-2 w-100">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-left py-2"
+                  href="#">
+                  <img src="./img/gourmet/icon_stadium01.png" alt="" class="w-15">
+                  <span class="fs-7 d-lg-none text-start">スタジアム定番<br>メニュー</span>
+                  <span class="d-none d-lg-flex">スタジアム定番メニュー</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="col-20 col-lg-13 mt-3 p-0">
+              <button class="position-relative btn btn-dark d-flex justify-content-center px-2 w-100">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-left py-2"
+                  href="#">
+                  <img src="./img/gourmet/icon_eventMenu01.png" alt="" class="w-15">
+                  <span class="fs-7 d-lg-none text-start">イベント関連<br>メニュー</span>
+                  <span class="d-none d-lg-flex">イベント関連メニュー</span>
+                  <span></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="col-20 col-lg-13 mt-3 p-0">
+              <button class="position-relative btn btn-dark d-flex justify-content-center px-2 w-100">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-left py-2"
+                  href="#">
+                  <img src="./img/gourmet/icon_uriko01.png" alt="" class="w-15">
+                  <span class="fs-7 d-lg-none text-start" style="line-height: 2rem;">売り子特集</span>
+                  <span class="d-none d-lg-flex">売り子特集</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="col-20 col-lg-13 mt-3 p-0">
+              <button class="position-relative btn btn-dark d-flex justify-content-center px-2 w-100">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-left py-2"
+                  href="#">
+                  <img src="./img/gourmet/icon_lunchbox01.png" alt="" class="w-15">
+                  <span class="fs-7 d-lg-none text-start" style="line-height: 2rem;">お弁当事前購入</span>
+                  <span class="d-none d-lg-flex">お弁当事前購入</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="col-20 col-lg-13 mt-3 p-0">
+              <button class="position-relative btn btn-dark d-flex justify-content-center px-2 w-100">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-left py-2"
+                  href="#">
+                  <img src="./img/gourmet/icon_gourmetMap01.png" alt="" class="w-15">
+                  <span class="fs-7 d-lg-none text-start">スタジアム<br>グルメマップ</span>
+                  <span class="d-none d-lg-flex">スタジアムグルメマップ</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- ボタン群 -->
+
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-38 col-lg-33 bg-primary text-light d-flex justify-content-start mt-3 ps-4 py-2">
+          <h2 class="mt-2 fs-5">PLAYERS COLLAB MENU</h2>
+        </div>
+
+        <div class="col-38 col-lg-33 mt-3">
+          <p>023シーズンに大幅パワーアップをした「PLAYERS COLLAB MENU」が更にパワーアップ！<br>
+            2024シーズンの新メニューが多数登場し、好評だった2023シーズンメニューも引き続き販売。<br>
+            年間100品以上のメニューを提供予定です。 「PLAYERS COLLAB MENU」を食べてマリーンズを熱く応援しよう！！
+          </p>
+        </div>
+
+        <div class="container-fluid">
+          <div class="col-42 col-lg-33 mt-3 d-flex d-md-none justify-content-center">
+            <div id="carouselExampleDark" class="col-38 carousel carousel-dark slide pointer-event">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <!-- 佐々木朗希投手 -->
+                  <div class="col">
+                    <div class="card h-100 rounded-0 border-3 border-dark">
+                      <img src="./img/gourmet/ph_new-menu17_05.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold fs-6">佐々木朗希投手の<br>「佐々木朗希の岩手格之進ハンバーグ<br>＆カルビ焼肉OVER RICE」</h5>
+                        <div class="row">
+                          <div class="col-17"><img src="./img/gourmet/ph_player_2024_17.jpg" alt="" class="w-100"></div>
+                          <div class="col-25 ps-0">
+                            <div class="col-42">
+                              <dl class="d-flex mb-1 border-bottom">
+                                <dt class="w-35 fs-7">価格</dt>
+                                <dd class="w-65 fs-7 mb-1">1,800円(税込)</dd>
+                              </dl>
+                              <dl class="d-flex mb-1 border-bottom">
+                                <dt class="w-35 fs-7">販売店</dt>
+                                <dd class="w-65 fs-7 mb-1">#26HOUSE</dd>
+                              </dl>
+                              <dl class="d-flex mb-1">
+                                <dt class="w-35 fs-7">販売場所
+                                </dt>
+                                <dd class="w-65 fs-7 mb-1">フロア1<br>
+                                  ライトスタンド下</dd>
+                              </dl>
+                            </div>
+                            <div class="col-42 d-flex justify-content-end">
+                              <button class="position-relative btn border-dark p-0" data-bs-toggle="modal"
+                                data-bs-target="#modal-1">
+                                <span
+                                  class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover justify-content-center px-5 py-1">
+                                  <span class="fw-bold">MAP</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                                    class="bi bi-chevron-right position-absolute end-5"
+                                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill-rule="evenodd"
+                                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                    </path>
+                                  </svg>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- 佐々木朗希投手 -->
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <!-- 小島和哉投手 -->
+                  <div class="col">
+                    <div class="card h-100 rounded-0 border-3 border-dark">
+                      <img src="./img/gourmet/ph_new-menu14_01.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold fs-6">小島和哉投手の<br>「小島のサーモンポキライス」<br><br></h5>
+                        <div class="row">
+                          <div class="col-17"><img src="./img/gourmet/ph_player_2024_14.jpg" alt="" class="w-100"></div>
+                          <div class="col-25 ps-0">
+                            <div class="col-42">
+                              <dl class="d-flex mb-1 border-bottom">
+                                <dt class="w-35 fs-7">価格</dt>
+                                <dd class="w-65 fs-7 mb-1">1,500円(税込)</dd>
+                              </dl>
+                              <dl class="d-flex mb-1 border-bottom">
+                                <dt class="w-35 fs-7">販売店</dt>
+                                <dd class="w-65 fs-7 mb-1">gateside DINER(モバイルオーダー対応店)</dd>
+                              </dl>
+                              <dl class="d-flex mb-1">
+                                <dt class="w-35 fs-7">販売場所</dt>
+                                <dd class="w-65 fs-7 mb-1">フロア2 Bゲート横</dd>
+                              </dl>
+                            </div>
+                            <div class="col-42 d-flex justify-content-end">
+                              <button class="position-relative btn border-dark p-0" data-bs-toggle="modal"
+                                data-bs-target="#modal-2">
+                                <span
+                                  class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover justify-content-center px-5 py-1">
+                                  <span class="fw-bold">MAP</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                                    class="bi bi-chevron-right position-absolute end-5"
+                                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill-rule="evenodd"
+                                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                    </path>
+                                  </svg>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- 小島和哉投手 -->
+                </div>
+                <div class="carousel-item">
+                  <!-- 和田康士朗選手 -->
+                  <div class="col">
+                    <div class="card h-100 rounded-0 border-3 border-dark">
+                      <img src="./img/gourmet/ph_new-menu63_02.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fw-bold fs-6">和田康士朗選手の<br>「ごろごろ牛タンシチューの<br>オムライス」</h5>
+                        <div class="row">
+                          <div class="col-17"><img src="./img/gourmet/ph_player_2024_63.jpg" alt="" class="w-100"></div>
+                          <div class="col-25 ps-0">
+                            <div class="col-42">
+                              <dl class="d-flex mb-1 border-bottom">
+                                <dt class="w-35 fs-7">価格</dt>
+                                <dd class="w-65 fs-7 mb-1">1,600円(税込)</dd>
+                              </dl>
+                              <dl class="d-flex mb-1 border-bottom">
+                                <dt class="w-35 fs-7">販売店</dt>
+                                <dd class="w-65 fs-7 mb-1">エースで4番</dd>
+                              </dl>
+                              <dl class="d-flex mb-1">
+                                <dt class="w-35 fs-7">販売場所
+                                </dt>
+                                <dd class="w-65 fs-7 mb-1">フロア4<br>406・407通路間</dd>
+                              </dl>
+                            </div>
+                            <div class="col-42 d-flex justify-content-end">
+                              <button class="position-relative btn border-dark p-0" data-bs-toggle="modal"
+                                data-bs-target="#modal-2">
+                                <span
+                                  class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover justify-content-center px-5 py-1">
+                                  <span class="fw-bold">MAP</span>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                                    class="bi bi-chevron-right position-absolute end-5"
+                                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill-rule="evenodd"
+                                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                    </path>
+                                  </svg>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- 和田康士朗選手 -->
+                </div>
+              </div>
+              <button class="carousel-control-prev top-20 align-items-start" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next top-20 align-items-start" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 選手メニュー -->
+        <div class="col-38 col-lg-33 mt-3 d-none d-md-block">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 rounded-0 border-3 border-dark">
+                <img src="./img/gourmet/ph_new-menu17_05.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-6">佐々木朗希投手の<br>「佐々木朗希の岩手格之進ハンバーグ<br>＆カルビ焼肉OVER RICE」</h5>
+                  <div class="row">
+                    <div class="col-17"><img src="./img/gourmet/ph_player_2024_17.jpg" alt="" class="w-100"></div>
+                    <div class="col-25 ps-0">
+                      <div class="col-42">
+                        <dl class="d-flex mb-1 border-bottom">
+                          <dt class="w-35 fs-7">価格</dt>
+                          <dd class="w-65 fs-7 mb-1">1,800円(税込)</dd>
+                        </dl>
+                        <dl class="d-flex mb-1 border-bottom">
+                          <dt class="w-35 fs-7">販売店</dt>
+                          <dd class="w-65 fs-7 mb-1">#26HOUSE</dd>
+                        </dl>
+                        <dl class="d-flex mb-1">
+                          <dt class="w-35 fs-7">販売場所
+                          </dt>
+                          <dd class="w-65 fs-7 mb-1">フロア1<br>
+                            ライトスタンド下</dd>
+                        </dl>
+                      </div>
+                      <div class="col-42 d-flex justify-content-end">
+                        <button class="position-relative btn border-dark p-0" data-bs-toggle="modal"
+                          data-bs-target="#modal-1">
+                          <span
+                            class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover justify-content-center px-5 py-1">
+                            <span class="fw-bold">MAP</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                              class="bi bi-chevron-right position-absolute end-5"
+                              aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                              <path fill-rule="evenodd"
+                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                              </path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 rounded-0 border-3 border-dark">
+                <img src="./img/gourmet/ph_new-menu14_01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-6">小島和哉投手の<br>「小島のサーモンポキライス」<br><br class="d-none d-lg-block"></h5>
+                  <div class="row">
+                    <div class="col-17"><img src="./img/gourmet/ph_player_2024_14.jpg" alt="" class="w-100"></div>
+                    <div class="col-25 ps-0">
+                      <div class="col-42">
+                        <dl class="d-flex mb-1 border-bottom">
+                          <dt class="w-35 fs-7">価格</dt>
+                          <dd class="w-65 fs-7 mb-1">1,500円(税込)</dd>
+                        </dl>
+                        <dl class="d-flex mb-1 border-bottom">
+                          <dt class="w-35 fs-7">販売店</dt>
+                          <dd class="w-65 fs-7 mb-1">gateside DINER(モバイルオーダー対応店)</dd>
+                        </dl>
+                        <dl class="d-flex mb-1">
+                          <dt class="w-35 fs-7">販売場所</dt>
+                          <dd class="w-65 fs-7 mb-1">フロア2 Bゲート横</dd>
+                        </dl>
+                      </div>
+                      <div class="col-42 d-flex justify-content-end">
+                        <button class="position-relative btn border-dark p-0" data-bs-toggle="modal"
+                          data-bs-target="#modal-2">
+                          <span
+                            class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover justify-content-center px-5 py-1">
+                            <span class="fw-bold">MAP</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                              class="bi bi-chevron-right position-absolute end-5"
+                              aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                              <path fill-rule="evenodd"
+                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                              </path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 rounded-0 border-3 border-dark">
+                <img src="./img/gourmet/ph_new-menu63_02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-6">和田康士朗選手の<br>「ごろごろ牛タンシチューの<br>オムライス」</h5>
+                  <div class="row">
+                    <div class="col-17"><img src="./img/gourmet/ph_player_2024_63.jpg" alt="" class="w-100"></div>
+                    <div class="col-25 ps-0">
+                      <div class="col-42">
+                        <dl class="d-flex mb-1 border-bottom">
+                          <dt class="w-35 fs-7">価格</dt>
+                          <dd class="w-65 fs-7 mb-1">1,600円(税込)</dd>
+                        </dl>
+                        <dl class="d-flex mb-1 border-bottom">
+                          <dt class="w-35 fs-7">販売店</dt>
+                          <dd class="w-65 fs-7 mb-1">エースで4番</dd>
+                        </dl>
+                        <dl class="d-flex mb-1">
+                          <dt class="w-35 fs-7">販売場所
+                          </dt>
+                          <dd class="w-65 fs-7 mb-1">フロア4<br>406・407通路間</dd>
+                        </dl>
+                      </div>
+                      <div class="col-42 d-flex justify-content-end">
+                        <button class="position-relative btn border-dark p-0" data-bs-toggle="modal"
+                          data-bs-target="#modal-2">
+                          <span
+                            class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover justify-content-center px-5 py-1">
+                            <span class="fw-bold">MAP</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                              class="bi bi-chevron-right position-absolute end-5"
+                              aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                              <path fill-rule="evenodd"
+                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                              </path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="w-100 position-relative btn btn-dark d-flex justify-content-center py-3 mt-5">
+            <span
+              class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-1"
+              href="#"><span class="fw-bold">PLAYERS COLLAB MENU<br class="d-block d-md-none">の詳細を見る</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                class="bi bi-chevron-right position-absolute end-5"
+                aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill-rule="evenodd"
+                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+              </svg>
+            </span>
+          </button>
+        </div> <!-- 選手メニュー -->
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-40 col-lg-33 mt-3 p-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fw-medium">
+              <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">グルメ</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
   </main>
+
+  <!-- Modal-1 -->
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="modal-1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/gourmet/map_outfield01.png" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div> <!-- Modal-1 -->
+
+  <!-- Modal-2 -->
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modal-2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/gourmet/map_first01.png" class="h-100">
+        </div>
+      </div>
+    </div>
+  </div> <!-- Modal-2 -->
 
   <footer class="mt-auto  py-3 bg-primary text-center text-light">
     <div class="container my-5 fs-1 text ">
       <div class="row justify-content-center">
-        <div class="col-33 ">
+        <div class="col-33">
           <div class="row">
-            <div class="col-6"><img src="./img/logo_fighters.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_eagles.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_lions_120_64.png" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_buffaloes.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_hawks.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
+            <div class="col-6 p-0"><img src="./img/logo_fighters.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_fighters.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_eagles.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_eagles.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_lions_120_64.png" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_lions_w.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_marines.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_marines.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_buffaloes.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_buffaloes.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_hawks.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_hawks.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
           </div>
         </div>
-        <div class="col-33  d-flex justify-content-center">
-          <div class="col-9"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
+        <div class="col-33 d-flex justify-content-center">
+          <div class="col-30 col-md-9"><a href=""><img src="./img/logo_marines.svg" alt="" class="w-100"></a></div>
         </div>
       </div>
     </div>
-    <p>千葉ロッテマリーンズ公式サイト Copyright © Chiba Lotte Marines All Rights Reserved.</p>
+    <p class="fs-7">千葉ロッテマリーンズ公式サイト <br class="d-sm-block d-md-none">Copyright © Chiba Lotte Marines All Rights
+      Reserved.</p>
   </footer>
 
   <!-- bootstrap cdn js -->

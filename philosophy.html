@@ -8,63 +8,280 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" href="./img/marines.svg" sizes="32x32">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100 m0">
-  <main class="flex-shrink-0">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center">
-      <div class="col-3 m-3">
-        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt=""></a>
+  <main class="flex-shrink-0 z-3">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center position-fixed w-100 z-3 pb-0 position-relative">
+      <div class="col-10 col-md-6 col-lg-3 m-1 m-md-3 z-3">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="" class="link-offset-1"></a>
       </div>
-      <div class="container-fluid p-0">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid p-0 bg-light gb-menu z-2">
+        <button class="navbar-toggler border-0 pb-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-2">
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" aria-current="page" href="./philosophy.html">球団情報</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./news.html">ニュース</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./event.html">イベント</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./gourmet.html">グルメ</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" aria-current="page"
+                href="./philosophy.html">球団情報</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light fw-bold" href="./goods.html">グッズ</a>
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./news.html">ニュース</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./event.html">イベント</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./gourmet.html">グルメ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./goods.html">グッズ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5 d-block d-lg-none" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
             </li>
           </ul>
         </div>
       </div>
+      <div class="position-absolute top-5 end-0 m-3 d-none d-lg-flex"><a class="btn d-flex align-items-center" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
     </nav>
+
+    <div class="container-fluid mb-3 p-0">
+      <div class="position-relative">
+        <div class="position-static">
+          <img src="./img/philosophy/pc_mission.jpg" alt="" class="w-100 d-none d-md-block">
+          <img src="./img/philosophy/sp_mission.jpg" alt="" class="w-100 d-md-none">
+        </div>
+        <div class="col-38 col-lg-33 position-absolute text-white top-45 start-5">
+          <h2 class="display-2 fw-bold mb-4">Our Mission</h2>
+          <p class="display-6 fw-bold lh-base">千葉ロッテマリーンズは、<br>
+            勝利と頂点を目指す集団であり、<br class="d-none d-md-block">
+            関わる全ての人々の誇りであり続ける。</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid mb-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-40 col-lg-36 px-0">
+          <h2 class="m-2 display-4 fw-900 text-secondary">Our Values</h2>
+        </div>
+        <div class="col-40 col-lg-42 px-0 mt-5 d-flex justify-content-between">
+          <div class="row justify-content-center">
+            <div class="col-21 col-md-10"><img src="./img/philosophy/values_professional.jpg" alt="" class="w-100">
+              <p class="fs-3 fw-900 mt-3">常にプロフェッショナル</p>
+            </div>
+            <div class="col-21 col-md-10"><img src="./img/philosophy/values_challenger.jpg" alt="" class="w-100">
+              <p class="fs-3 fw-900 mt-3">常に挑戦者</p>
+            </div>
+            <div class="col-21 col-md-10"><img src="./img/philosophy/values_enjoy.jpg" alt="" class="w-100">
+              <p class="fs-3 fw-900 mt-3">常に楽しむ</p>
+            </div>
+            <div class="col-21 col-md-10"><img src="./img/philosophy/values_respect.jpg" alt="" class="w-100">
+              <p class="fs-3 fw-900 mt-3">常にリスペクト</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="ourBelief" class="container-fluid mb-3 pt-5 mt-5">
+      <div class="row position-relative bg-secondary-subtle justify-content-end py-5">
+        <!-- PC -->
+        <div class="col-21 p-0 position-absolute top-25 start-0 d-none d-md-block">
+          <div class="position-relative start-20">
+            <h2 class="m-2 display-4 fw-900 text-secondary">Our Belief</h2>
+            <ul class="mt-4 ps-4">
+              <li class="d-flex align-items-center">
+                <div class="display-6 fw-900 lh-base pt-2 pb-3 ms-3 mb-0">勝利への<span class="display-3 fw-900">挑戦</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="display-6 fw-900 lh-base pt-2 pb-3 ms-3 mb-0">勝利の<span class="display-3 fw-900">熱狂</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="display-6 fw-900 lh-base pt-2 pb-3 ms-3 mb-0">勝利の<span class="display-3 fw-900">結束</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- SP -->
+        <div class="col-21 p-0 position-absolute top-10 start-0 d-block d-md-none">
+          <div class="position-relative start-10">
+            <h2 class="m-2 display-4 fw-900 text-secondary">Our Belief</h2>
+            <ul class="p-0">
+              <li class="d-flex align-items-center">
+                <div class="fs-4 fw-900 lh-base pt-2 pb-3 ms-3 mb-0">勝利への<span class="display-5 fw-900">挑戦</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="fs-4 fw-900 lh-base pt-2 pb-3 ms-3 mb-0">勝利の<span class="display-5 fw-900">熱狂</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="fs-4 fw-900 lh-base pt-2 pb-3 ms-3 mb-0">勝利の<span class="display-5 fw-900">結束</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-21 p-0 position-relative">
+          <img src="./img/philosophy/belief.jpg" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="bottomNav" class="container-fluid mb-3 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-38 col-md-40 px-0 mt-5 d-flex justify-content-center">
+          <ul class="row justify-content-center p-0">
+            <li class="col-21 col-md-8 position-relative mb-4">
+              <a href="javascript:;" class="position-relative">
+                <div class="overflow-hidden">
+                  <img src="./img/philosophy/info_philosophy.jpg" class="w-100">
+                </div>
+                <div class="bottomNav-bnr position-relative btn btn-border-radius-0 btn-white d-flex justify-content-center p-0">
+                  <span class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-between py-2 mb-3 fw-bold">
+                    PHILOSOPHY
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short text-end fs-2" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="col-21 col-md-8 position-relative mb-4">
+              <a href="javascript:;" class="position-relative">
+                <div class="overflow-hidden">
+                  <img src="./img/philosophy/info_vision.jpg" class="w-100">
+                </div>
+                <div class="bottomNav-bnr position-relative btn btn-border-radius-0 btn-white d-flex justify-content-center p-0">
+                  <span class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-between py-2 mb-3 fw-bold">
+                    VISION 2025
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short text-end fs-2" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="col-21 col-md-8 position-relative mb-4">
+              <a href="javascript:;" class="position-relative">
+                <div class="overflow-hidden">
+                  <img src="./img/philosophy/info_team_voice.jpg" class="w-100">
+                </div>
+                <div class="bottomNav-bnr position-relative btn btn-border-radius-0 btn-white d-flex justify-content-center p-0">
+                  <span class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-between py-2 mb-3 fw-bold">
+                    TEAM VOICE
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short text-end fs-2" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            </li>
+            
+            <li class="col-21 col-md-8 position-relative mb-4">
+              <a href="javascript:;" class="position-relative">
+                <div class="overflow-hidden">
+                  <img src="./img/philosophy/info_recruit.jpg" class="w-100">
+                </div>
+                <div class="bottomNav-bnr position-relative btn btn-border-radius-0 btn-white d-flex justify-content-center p-0">
+                  <span class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-between py-2 mb-3 fw-bold">
+                    CAREERS
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short text-end fs-2" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="col-21 col-md-8 position-relative mb-4">
+              <a href="javascript:;" class="position-relative">
+                <div class="overflow-hidden">
+                  <img src="./img/philosophy/info_about.jpg" class="w-100">
+                </div>
+                <div class="bottomNav-bnr position-relative btn btn-border-radius-0 btn-white d-flex justify-content-center p-0">
+                  <span class="d-flex link-dark link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-between py-2 mb-3 fw-bold">
+                    ABOUT
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short text-end fs-2" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="col-21 col-md-8 position-relative mb-4"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-5 mb-3">
+      <div class="row justify-content-center">
+        <div class="col-40 col-lg-42 mt-3 p-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fw-medium">
+              <li class="breadcrumb-item"><a href="#">トップ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">球団情報</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
 
   </main>
 
   <footer class="mt-auto  py-3 bg-primary text-center text-light">
     <div class="container my-5 fs-1 text ">
       <div class="row justify-content-center">
-        <div class="col-33 ">
+        <div class="col-33">
           <div class="row">
-            <div class="col-6"><img src="./img/logo_fighters.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_eagles.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_lions_120_64.png" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_buffaloes.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_hawks.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
+            <div class="col-6 p-0"><img src="./img/logo_fighters.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_fighters.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_eagles.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_eagles.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_lions_120_64.png" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_lions_w.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_marines.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_marines.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_buffaloes.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_buffaloes.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_hawks.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_hawks.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
           </div>
         </div>
-        <div class="col-33  d-flex justify-content-center">
-          <div class="col-9"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
+        <div class="col-33 d-flex justify-content-center">
+          <div class="col-30 col-md-9"><a href=""><img src="./img/logo_marines.svg" alt="" class="w-100"></a></div>
         </div>
       </div>
     </div>
-    <p>千葉ロッテマリーンズ公式サイト Copyright © Chiba Lotte Marines All Rights Reserved.</p>
+    <p class="fs-7">千葉ロッテマリーンズ公式サイト <br class="d-sm-block d-md-none">Copyright © Chiba Lotte Marines All Rights
+      Reserved.</p>
   </footer>
 
   <!-- bootstrap cdn js -->

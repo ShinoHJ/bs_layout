@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ファンクラブ</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="./img/marines.svg" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="d-flex navbar-expand-lg flex-column h-100 m0" style="background: #FBFBFB;">
+  <main id="team26Wrap" class="flex-shrink-0">
+    <nav class="navbar bg-dark border-bottom border-body pb-0" data-bs-theme="dark">
+      <div class="container col-lg-33">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-16 col-md-6 p-2">
+          <a class="navbar-brand" href="#">
+            <img src="./img/team26/logo-team26.svg" alt="" class="w-100">
+          </a>
+        </div>
+        <a type="button" class="btn btn-team26-red m-1 d-block d-lg-none" href="./memberLogin.html">ログイン</a>
+        <div class="collapse navbar-collapse justify-content-end py-3" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-2" aria-current="page" href="./philosophy.html">球団情報</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-2" href="./news.html">ニュース</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-2" href="./event.html">イベント</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-2" href="./gourmet.html">グルメ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-2" href="./goods.html">グッズ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-2 d-block d-lg-none" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a>
+            </li>
+          </ul>
+          <a type="button" class="btn btn-light m-1" href="javascript:;">よくある質問はこちら</a>
+          <a type="button" class="btn btn-light m-1" href="javascript:;">会員登録</a>
+          <a type="button" class="btn btn-team26-red m-1 d-none d-lg-block" href="./memberLogin.html">ログイン</a>
+        </div>
+      </div>
+      <!-- <div class="container-fluid bg-light d-none d-lg-flex"><ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+        <li class="nav-item">
+          <a class="nav-link link-dark link-opacity-75-hover fw-bold py-3 px-5" aria-current="page" href="./philosophy.html">球団情報</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-opacity-75-hover fw-bold py-3 px-5" href="./news.html">ニュース</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-opacity-75-hover fw-bold py-3 px-5" href="./event.html">イベント</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-opacity-75-hover fw-bold py-3 px-5" href="./gourmet.html">グルメ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-opacity-75-hover fw-bold py-3 px-5" href="./goods.html">グッズ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-opacity-75-hover fw-bold py-3 px-5 d-block d-lg-none" href="./team26.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a>
+        </li>
+      </ul></div> -->
+    </nav>
+
+    <div class="container mb-3 mt-5 mt-lg-6">
+      <div class="row justify-content-center">
+        <div class="col-42 col-lg-35 mb-3">
+          <div class="card text-center rounded-3 border-0 shadow">
+            <h5 class="rounded-top-3 card-header card-title bg-primary text-white fs-3 fw-bold p-3">会員ログイン</h5>
+            <div class="card-body d-flex justify-content-center">
+              <div class="col-40 col-lg-33 mt-5">
+                <form action="">
+                  <div class="bg-light mb-3 p-4">
+                    <div class="mb-3 row">
+                      <div class="col-42 col-md-16 col-lg-14 d-flex justify-content-start align-items-center">
+                        <label for="membetId" class="col-form-label">マリーンズID（会員番号）</label>
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control p-2" id="membetId" placeholder="89で始まる10ケタの番号">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-42 col-md-16 col-lg-14 d-flex justify-content-start align-items-center">
+                        <label for="password" class="col-form-label">パスワード</label>
+                      </div>
+                      <div class="col">
+                        <input type="password" class="form-control p-2" id="password">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        <p><a class="link-danger link-underline-opacity-0-hover text-decoration-underline fw-bold"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">ログイン状態を保持する</a></p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mb-4">
+                    <button type="submit" class="col-42 btn btn-team26-red mb-3 p-3">ログイン</button>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="submit"
+                      class="col-32 col-md-20 col-lg-14 btn btn-warning-subtle mb-3 p-2">パスワードを忘れた方はこちら</button>
+                  </div>
+                </form>
+
+                <div class="my-4">
+                  <div class="border-bottom border-3 border-primary mb-2">
+                    <h2 class="text-start fs-5 fw-900 ">ログイン</h2>
+                  </div>
+                  <div class="text-start py-1">
+                    <p>マリーンズID（会員番号）とパスワードを入力してログインしてください。</p>
+                    <ul class="ps-0">
+                      <li class="ps-3 pb-1" style="text-indent: -1rem;">
+                        <span>※</span>マリーンズIDは初期入会時に発行される89で始まる10ケタの番号です。会員証（プラスチックカード）の裏面、もしくはマイページやMARINES
+                        APPの「デジタル会員証」で確認できます。
+                      </li>
+                      <li class="ps-3" style="text-indent: -1rem;">
+                        <span>※</span>マリーンズIDでログインすることで、TEAM26会員専用マイページ限定サービスの利用や、Mチケットオンライン、マリーンズオンラインストアなどのサイトへ自動ログインができます。
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="my-4">
+                  <div class="border-bottom border-3 border-primary mb-2">
+                    <h2 class="text-start fs-5 fw-900 ">2023年度以前に入会された方</h2>
+                  </div>
+                  <div class="text-start py-1">
+                    <p>2023年度有料会員の方で、2024年度有料継続入会の手続きがお済みでない場合は、2024年2月1日以降無料会員としてログインされます。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-40 col-lg-33 mt-3 p-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fw-medium">
+              <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">ファンクラブ</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="mt-auto  py-3 bg-primary text-center text-light">
+    <div class="container my-5 fs-1 text ">
+      <div class="row justify-content-center">
+        <div class="col-33">
+          <div class="row">
+            <div class="col-6 p-0"><img src="./img/logo_fighters.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_fighters.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_eagles.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_eagles.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_lions_120_64.png" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_lions_w.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_marines.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_marines.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_buffaloes.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_buffaloes.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_hawks.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_hawks.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
+          </div>
+        </div>
+        <div class="col-33 d-flex justify-content-center">
+          <div class="col-30 col-md-9"><a href="javascript:;"><img src="./img/logo_marines.svg" alt=""
+                class="w-100"></a></div>
+        </div>
+      </div>
+    </div>
+    <p class="fs-7">千葉ロッテマリーンズ公式サイト <br class="d-sm-block d-md-none">Copyright © Chiba Lotte Marines All Rights
+      Reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0 pb-3">
+        <div class="modal-header bg-primary text-white rounded-0 d-flex justify-content-center">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">ログイン状態を保持する</h1>
+        </div>
+        <div class="modal-body">
+          <div class="my-4">
+            <div class="border-bottom border-2 border-primary mb-2">
+              <h2 class="text-start fs-5">ログイン状態を保持する</h2>
+            </div>
+            <div class="text-start py-1">
+              <p>トップページの「ログイン状態を保持する」にチェックをすると、次回以降、会員番号、パスワードを入力しなくても、クッキーにより自動でログインできます。</p>
+              <ul class="ps-0">
+                <li class="ps-3 pb-1" style="text-indent: -1rem;">
+                  <span>※</span>ログイン状態を保持するにはクッキー（cookie）を有効にしておく必要があります。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="my-4">
+            <div class="border-bottom border-2 border-primary mb-2">
+              <h2 class="text-start fs-5 ">ログアウト</h2>
+            </div>
+            <div class="text-start py-1">
+              <p>ログアウトボタンをクリックすると、「ログイン状態を保持する」を選択していても、解除されます。<br>再度、会員番号とパスワードを入力してログインしてください。
+              </p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="col-16 btn btn-secondary rounded-0 p-4" data-bs-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap cdn js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'click'
+      });
+    })
+  </script>
+
+</body>
+
+</html>

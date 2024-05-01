@@ -8,63 +8,610 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" href="./img/marines.svg" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100 m0">
   <main class="flex-shrink-0">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center">
-      <div class="col-3 m-3">
-        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt=""></a>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center position-fixed w-100 z-3 pb-0 position-relative">
+      <div class="col-10 col-md-6 col-lg-3 m-1 m-md-3 z-3">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="" class="link-offset-1"></a>
       </div>
-      <div class="container-fluid p-0">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid p-0 bg-light gb-menu z-2">
+        <button class="navbar-toggler border-0 pb-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-2">
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" aria-current="page" href="./philosophy.html">球団情報</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./news.html">ニュース</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./event.html">イベント</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./gourmet.html">グルメ</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" aria-current="page"
+                href="./philosophy.html">球団情報</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light fw-bold" href="./goods.html">グッズ</a>
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./news.html">ニュース</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./event.html">イベント</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./gourmet.html">グルメ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./goods.html">グッズ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5 d-block d-lg-none" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
             </li>
           </ul>
         </div>
       </div>
+      <div class="position-absolute top-5 end-0 m-3 d-none d-lg-flex"><a class="btn d-flex align-items-center" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
     </nav>
+
+    <div class="container mb-3 mt-6 mt-lg-9">
+      <div class="row justify-content-center">
+        <div class="col-40 col-lg-33 px-0">
+          <div class="row">
+            <div class="col-20">
+              <div class="mb-3"><h2 class="fs-2 fw-bold">2024<span class="fs-6 ms-2 me-3">年</span>4<span class="fs-6 ms-2 ">月</span></h2></div>
+            </div>
+          </div>
+          
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <!-- #29 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-top border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-29" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-29">
+                  <h2 class="fs-2 fw-bold">29<span class="fs-6 ms-2 ">月</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-29" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">5/6(月・祝)コレオグラフィー掲出に関するご協力のお願い</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">5/6(月・祝)「ロッテ ガーナチョコレート 母の日スペシャルデー」開催</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #29 -->
+
+            <!-- #28 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-28" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-28">
+                  <h2 class="fs-2 fw-bold">28<span class="fs-6 ms-2 ">日</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-28" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-ticket badge rounded-pill px-4 badge-event"> </span>
+                          <span class="bg-farm badge rounded-pill px-4 badge-event"> </span>
+                          <span class="bg-community badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">6/2(日)イースタン・リーグ公式戦 東京ヤクルト戦(袖ケ浦市)のチケット販売について</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #28 -->
+
+            <!-- #27 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-27" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-27">
+                  <h2 class="fs-2 fw-bold">27<span class="fs-6 ms-2 ">土</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-27" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/27(土)「三井アウトレットパーク 幕張 スペシャルゲーム」ラッキーナンバー 当選番号</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-others badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">ZOZOマリンスタジアム限定「勘定奉行クラウド」CMに安田選手が起用</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #27 -->
+
+            <!-- #26 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-26" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-26">
+                  <h2 class="fs-2 fw-bold">26<span class="fs-6 ms-2 ">金</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-26" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-farm badge rounded-pill px-4 badge-event"> </span>
+                          <span class="bg-stadium badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">5/2(木)イースタン・リーグ公式戦 北海道日本ハム戦(ZOZOマリンスタジアム)施設営業・サービスの稼働について</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-goods badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/28(日)～アニメ「忘却バッテリー」コラボグッズ販売情報</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-fc badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/27(土)～5/7(火)公式電子トレカコレクション「MARINES COLLECTION」イベント情報</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-others badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">社会貢献プロジェクトMARINES LINKS　『マリーンズ・キッズボールパーク』5月開催のお知らせ</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【4/26(金)更新】4/28(日) TVアニメ「忘却バッテリー」コラボ試合 イベント情報</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-fc badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【6月開催】「ちば興銀プレゼンツ TEAM26バックネット裏練習見学会」のお知らせ</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-fc badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【6月開催】「ちば興銀プレゼンツ TEAM26ファイト イッパーツ！リポビタンシート練習見学会」参加者募集</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-fc badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【6月開催】「ちば興銀プレゼンツ TEAM26 グラウンド練習見学会」参加者募集</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #26 -->
+
+            <!-- #25 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-25" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-25">
+                  <h2 class="fs-2 fw-bold">25<span class="fs-6 ms-2 ">木</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-25" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/25(木)「大型分譲地ぞくぞく！レオガーデン エキサイティングナイター」ラッキーナンバー 当選番号</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-goods badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/26(金)マリーンズ×コアラのマーチグッズ販売情報</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-goods badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/26(金)新商品販売情報</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-goods badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【オンラインストア限定】4/26(金)受注販売グッズ情報</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-goods badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【オンラインストア限定】4/26(金)鈴木投手プロ入り初セーブ記念グッズ受注販売</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-gourmet badge rounded-pill px-4 badge-event"> </span>
+                          <span class="bg-goods badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/27(土)～29(月・祝)GWエンジョイボールパーク「マリキャン」コラボグルメ＆グッズ販売</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【4/25(木)更新】4/27(土)～29(月・祝)GWエンジョイボールパーク supported by ZOZOTOWN イベント情報</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #25 -->
+
+            <!-- #24 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-24" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-24">
+                  <h2 class="fs-2 fw-bold">24<span class="fs-6 ms-2 ">水</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-24" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">5/24(金)〜26(日)「タイガーボトルで野球観戦DAYS ～環境のことを考えてマイボトルを持参しよう～」開催</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-farm badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">【イースタン・リーグ公式戦】4/24(水)楽天戦 中止のお知らせ</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #24 -->
+
+            <!-- #23 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-23" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-23">
+                  <h2 class="fs-2 fw-bold">23<span class="fs-6 ms-2 ">火</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-23" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-event badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">4/23(火)160km/hチャレンジ 当選マリーンズID発表</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-team badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">公式戦通算10,000試合達成！</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #23 -->
+
+            <!-- #22 -->
+            <div class="accordion-item border-0 border-end-0 border-dark rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-white rounded-0 border-dark border-bottom" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse-22" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapse-22">
+                  <h2 class="fs-2 fw-bold">22<span class="fs-6 ms-2 ">月</span></h2>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapse-22" class="accordion-collapse collapse rounded-0 show">
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-fc badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">2024年ファンクラブデー連動企画「BLACK SUMMERユニホームデザイン保冷ポーチ」モデル選手決定</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="accordion-body p-0 border-dark border-bottom ">
+                  <a href="javascript:;" class="d-inline-block w-100 position-relative bg-light m-0 rounded-0">
+                    <span class="link-dark link-opacity-75-hover icon-link icon-link-hover flex-wrap w-100 ps-3 pe-4 px-lg-4 py-3">
+                      <div class="row w-100">
+                        <div class="col">
+                          <span class="bg-media badge rounded-pill px-4 badge-event"> </span>
+                        </div>
+                      </div>
+                      <span class="fw-bold">千葉日報朝刊に連載コラム「千葉魂～マリーンズ挑戦の日々～」第415回掲載</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor" class="bi bi-chevron-right position-absolute start-95" aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill-rule="evenodd" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  <!-- #22 -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-40 col-lg-33 mt-3 p-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fw-medium">
+              <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">ニュース</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
 
   </main>
 
   <footer class="mt-auto  py-3 bg-primary text-center text-light">
     <div class="container my-5 fs-1 text ">
       <div class="row justify-content-center">
-        <div class="col-33 ">
+        <div class="col-33">
           <div class="row">
-            <div class="col-6"><img src="./img/logo_fighters.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_eagles.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_lions_120_64.png" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_buffaloes.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_hawks.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
+            <div class="col-6 p-0"><img src="./img/logo_fighters.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_fighters.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_eagles.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_eagles.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_lions_120_64.png" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_lions_w.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_marines.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_marines.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_buffaloes.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_buffaloes.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_hawks.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_hawks.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
           </div>
         </div>
-        <div class="col-33  d-flex justify-content-center">
-          <div class="col-9"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
+        <div class="col-33 d-flex justify-content-center">
+          <div class="col-30 col-md-9"><a href=""><img src="./img/logo_marines.svg" alt="" class="w-100"></a></div>
         </div>
       </div>
     </div>
-    <p>千葉ロッテマリーンズ公式サイト Copyright © Chiba Lotte Marines All Rights Reserved.</p>
+    <p class="fs-7">千葉ロッテマリーンズ公式サイト <br class="d-sm-block d-md-none">Copyright © Chiba Lotte Marines All Rights
+      Reserved.</p>
   </footer>
 
   <!-- bootstrap cdn js -->

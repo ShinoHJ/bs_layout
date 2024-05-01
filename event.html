@@ -8,47 +8,59 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" href="./img/marines.svg" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body class="d-flex flex-column h-100 m0">
   <main class="flex-shrink-0">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center">
-      <div class="col-3 m-3">
-        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt=""></a>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-center position-fixed w-100 z-3 pb-0 position-relative">
+      <div class="col-10 col-md-6 col-lg-3 m-1 m-md-3 z-3">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="" class="link-offset-1"></a>
       </div>
-      <div class="container-fluid p-0">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid p-0 bg-light gb-menu z-2">
+        <button class="navbar-toggler border-0 pb-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-2">
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" aria-current="page" href="./philosophy.html">球団情報</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./news.html">ニュース</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./event.html">イベント</a>
-            </li>
-            <li class="nav-item me-5">
-              <a class="nav-link text-light fw-bold" href="./gourmet.html">グルメ</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" aria-current="page"
+                href="./philosophy.html">球団情報</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light fw-bold" href="./goods.html">グッズ</a>
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./news.html">ニュース</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./event.html">イベント</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./gourmet.html">グルメ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5" href="./goods.html">グッズ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light link-opacity-75-hover fw-bold py-3 px-5 d-block d-lg-none" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
             </li>
           </ul>
         </div>
       </div>
+      <div class="position-absolute top-5 end-0 m-3 d-none d-lg-flex"><a class="btn d-flex align-items-center" href="./memberLogin.html"><i class="bi bi-person-badge-fill fs-4 me-1"></i>TEAM26</a></div>
     </nav>
 
-    <div class="container mt-3">
+    <div class="container mb-3 mt-6 mt-lg-9">
       <div class="row justify-content-center">
         <div class="col-33">
           <img src="./img/event/hl_GWenjoyballpark03.jpg" alt="" class="w-100">
         </div>
-        <div class="col-33 bg-primary text-light d-flex justify-content-center m-3">
+        <div class="col-33 bg-primary text-light d-flex justify-content-center mt-3">
           <h2 class="mt-2">EVENT SCHEDULE</h2>
         </div>
         <div class="col-33 bg-secondary text-primary d-flex justify-content-center mb-2">
@@ -66,10 +78,10 @@
                   </div>
                   <div class="col-11 col-lg-6"><img src="./img/event/ptmk_h.png" alt="" class="w-100"></div>
                   <div class="col-19 col-lg-10">
-                    <span class="badge rounded-0 text-bg-tertiary text-light">開&emsp;&emsp;場</span><span
-                      class="fw-bold ms-1">16:00</span>
-                    <span class="badge rounded-0 text-bg-tertiary text-light">試合開始</span><span
-                      class="fw-bold ms-1">18:00</span>
+                    <span class="badge rounded-0 text-bg-tertiary text-light user-select-none">開&emsp;&emsp;場</span><br>
+                    <span class="fw-bold ms-1">16:00</span>
+                    <span class="badge rounded-0 text-bg-tertiary text-light user-select-none">試合開始</span>
+                    <span class="fw-bold ms-1">18:00</span>
                   </div>
                 </div>
               </div>
@@ -98,10 +110,10 @@
                   </div>
                   <div class="col-11 col-lg-6"><img src="./img/event/ptmk_h.png" alt="" class="w-100"></div>
                   <div class="col-19 col-lg-10">
-                    <span class="badge rounded-0 text-bg-tertiary text-light">開&emsp;&emsp;場</span><span
-                      class="fw-bold ms-1">16:00</span>
-                    <span class="badge rounded-0 text-bg-tertiary text-light">試合開始</span><span
-                      class="fw-bold ms-1">18:00</span>
+                    <span class="badge rounded-0 text-bg-tertiary text-light user-select-none">開&emsp;&emsp;場</span>
+                    <span class="fw-bold ms-1">16:00</span><br>
+                    <span class="badge rounded-0 text-bg-tertiary text-light user-select-none">試合開始</span>
+                    <span class="fw-bold ms-1">18:00</span>
                   </div>
                 </div>
               </div>
@@ -130,18 +142,26 @@
                   </div>
                   <div class="col-11 col-lg-6"><img src="./img/event/ptmk_e02.png" alt="" class="w-100"></div>
                   <div class="col-19 col-lg-10">
-                    <span class="badge rounded-0 text-bg-tertiary text-light">開&emsp;&emsp;場</span><span
-                      class="fw-bold ms-1">12:00</span>
-                    <span class="badge rounded-0 text-bg-tertiary text-light">試合開始</span><span
-                      class="fw-bold ms-1">14:00</span>
+                    <span class="badge rounded-0 text-bg-tertiary text-light user-select-none">開&emsp;&emsp;場</span>
+                    <span class="fw-bold ms-1">12:00</span><br>
+                    <span class="badge rounded-0 text-bg-tertiary text-light user-select-none">試合開始</span>
+                    <span class="fw-bold ms-1">14:00</span>
                   </div>
-                  <div class="col-6 flex-row d-flex d-block d-md-none d-lg-flex">
+                  <div class="col-6 flex-row d-flex d-block d-md-none d-lg-flex d-none d-lg-flex">
                     <img src="./img/event/logo_enjoyballpark.png" alt="" class="w-100">
                     <img src="./img/event/icon_giveaway.png" alt="" class="w-100">
                   </div>
                 </div>
               </div>
               <div class="col-42 col-lg-15 row align-items-center justify-content-end overflow-hidden me-0 pe-0">
+                <div class="col d-block d-lg-none">
+                  <div class="col-42 flex-row d-flex d-lg-flex d-lg-flex">
+                    <img src="./img/event/logo_enjoyballpark.png" alt="" class="w-80">
+                  </div>
+                  <div class="col-42 flex-row d-flex d-lg-flex d-lg-flex"><img src="./img/event/icon_giveaway.png"
+                      alt="" class="w-80">
+                  </div>
+                </div>
                 <div class="col-21">
                   <a href="javascript:;"><img src="./img/event/btn_ticket01.png" alt="" class="w-100 mb-1"></a>
                   <a href="javascript:;"><img src="./img/event/btn_detail01.png" alt="" class="w-100 mb-1"></a>
@@ -159,35 +179,90 @@
       </div>
     </div>
 
+    <div class="container mb-3 d-flex justify-content-center">
+      <button type="button" class="btn btn-dark text-light btn-xl d-flex align-items-center fw-bold"
+        href="javascript:;"><i class="bi bi-calendar3 fs-1 text me-4"></i>今月のイベント<br
+          class="d-sm-block d-md-none">スケジュールを見る<i class="bi bi-chevron-right ms-4"></i></button>
+    </div>
+
+
+
     <!-- SPECIAL EVENT -->
-    <div class="container mt-3">
+    <div class="container mb-3">
       <div class="row justify-content-center">
-        <div class="col-33 bg-primary text-light d-flex justify-content-center m-3">
+        <div class="col-33 bg-primary text-light d-flex justify-content-center mt-3">
           <h2 class="mt-2">SPECIAL EVENT</h2>
         </div>
         <div class="col-33 p-0">
           <div class="row">
-            <div class="col-lg-14 col-md-21 mt-3 position-relative">
-              <a href="javascript:;"><img src="./img/event/hl_blackblack02.jpg" alt="" class="w-100">
+
+            <div class="col-lg-14 col-md-21 mt-3">
+              <a href="javascript:;" class="d-flex"><img src="./img/event/hl_blackblack02.jpg" alt="" class="w-100">
               </a>
-              <span class="position-relative bg-primary">TEXT</span>
-            </div>
-            <div class="col-lg-14 col-md-21 mt-3">
-              <a href="javascript:;"><img src="./img/event/hl_gourmetfes02.jpg" alt="" class="w-100"></a>
-            </div>
-            <div class="col-lg-14 col-md-21 mt-3">
-              <a href="javascript:;"><img src="./img/event/hl_interleague02.jpg" alt="" class="w-100"></a>
+              <div class="position-relative btn btn-border-radius-0 btn-dark d-flex justify-content-center p-0">
+                <a class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-2"
+                  href="javascript:;">
+                  BLACK BLACK
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </a>
+              </div>
+
             </div>
 
             <div class="col-lg-14 col-md-21 mt-3">
-              <a href="javascript:;"><img src="./img/event/hl_blackblack02.jpg" alt="" class="w-100"></a>
+              <a href="javascript:;" class="d-flex"><img src="./img/event/hl_gourmetfes02.jpg" alt="" class="w-100"></a>
+              <div class="position-relative btn btn-border-radius-0 btn-dark d-flex justify-content-center p-0">
+                <a class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-2"
+                  href="javascript:;">
+                  から揚げ＆餃子フェス
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </a>
+              </div>
             </div>
+
             <div class="col-lg-14 col-md-21 mt-3">
-              <a href="javascript:;"><img src="./img/event/hl_gourmetfes02.jpg" alt="" class="w-100"></a>
+              <a href="javascript:;" class="d-flex"><img src="./img/event/hl_interleague02.jpg" alt=""
+                  class="w-100"></a>
+              <btn class="position-relative btn btn-border-radius-0 btn-dark d-flex justify-content-center p-0">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-2"
+                  href="javascript:;">
+                  日本生命セ・パ交流戦
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </btn>
             </div>
+
             <div class="col-lg-14 col-md-21 mt-3">
-              <a href="javascript:;"><img src="./img/event/hl_interleague02.jpg" alt="" class="w-100"></a>
+              <a href="javascript:;" class="d-flex pe-none" pointer-events-none><img
+                  src="./img/event/hl_allforchibafes01.jpg" alt="" class="w-100"></a>
             </div>
+
+            <div class="col-lg-14 col-md-21 mt-3">
+              <a href="javascript:;" class="d-flex pe-none"><img src="./img/event/hl_blacksummerweek01.jpg" alt=""
+                  class="w-100"></a>
+            </div>
+
+            <div class="col-lg-14 col-md-21 mt-3">
+              <a href="javascript:;" class="d-flex pe-none"><img src="./img/event/hl_natsumatsuri01.jpg" alt=""
+                  class="w-100"></a>
+            </div>
+
           </div>
         </div>
 
@@ -195,14 +270,100 @@
     </div> <!-- SPECIAL EVENT -->
 
     <!-- OTHER EVENT -->
-    <div class="container mt-3">
+    <div class="container mb-3">
       <div class="row justify-content-center">
-        <div class="col-33 bg-primary text-light d-flex justify-content-center m-3">
+        <div class="col-33 bg-primary text-light d-flex justify-content-center mt-3">
           <h2 class="mt-2">OTHER EVENT</h2>
+        </div>
+        <div class="col-33 p-0">
+          <div class="row">
+
+            <div class="col-lg-14 col-md-21 mt-3">
+              <a href="javascript:;" class="d-flex"><img src="./img/event/nce_kv02.jpg" alt="" class="w-100">
+              </a>
+              <div class="position-relative btn btn-border-radius-0 btn-dark d-flex justify-content-center p-0">
+                <a class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-2"
+                  href="javascript:;">
+                  NEO CLASSIC EDITION
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="col-lg-14 col-md-21 mt-3">
+              <a href="javascript:;" class="d-flex"><img src="./img/event/ph_pickup06.jpg" alt="" class="w-100"></a>
+              <div class="position-relative btn btn-border-radius-0 btn-dark d-flex justify-content-center p-0">
+                <a class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-2"
+                  href="javascript:;">
+                  MARINES HANABI
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-14 col-md-21 mt-3">
+              <a href="javascript:;" class="d-flex"><img src="./img/event/ph_pickup09.jpg" alt="" class="w-100"></a>
+              <btn class="position-relative btn btn-border-radius-0 btn-dark d-flex justify-content-center p-0">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-2"
+                  href="javascript:;">
+                  GROUND WALK
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </btn>
+            </div>
+
+            <div class="col-lg-14 col-md-21 mt-3">
+              <a href="javascript:;" class="d-flex"><img src="./img/event/ph_park01.jpg" alt="" class="w-100"></a>
+              <btn class="position-relative btn btn-border-radius-0 btn-dark d-flex justify-content-center p-0">
+                <span
+                  class="d-flex link-light link-opacity-75-hover icon-link icon-link-hover w-100 justify-content-center px-5 py-2"
+                  href="javascript:;">
+                  外周イベント
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                    class="bi bi-chevron-right position-absolute end-5"
+                    aria-hidden="true"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill-rule="evenodd"
+                      d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                  </svg>
+                </span>
+              </btn>
+            </div>
+
+          </div>
         </div>
 
       </div>
     </div> <!-- OTHER EVENT -->
+
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-40 col-lg-33 mt-3 p-0">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb fw-medium">
+              <li class="breadcrumb-item"><a href="index.html">トップ</a></li>
+              <li class="breadcrumb-item active" aria-current="page">イベント</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -211,25 +372,47 @@
       <div class="row justify-content-center">
         <div class="col-33">
           <div class="row">
-            <div class="col-6"><img src="./img/logo_fighters.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_eagles.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_lions_120_64.png" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_buffaloes.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_hawks.svg" alt="" class="w-100"></div>
-            <div class="col-6"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
+            <div class="col-6 p-0"><img src="./img/logo_fighters.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_fighters.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_eagles.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_eagles.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_lions_120_64.png" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_lions_w.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_marines.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_marines.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_buffaloes.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_buffaloes.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_hawks.svg" alt="" class="w-100 d-none d-md-block">
+              <img src="./img/logo_s_hawks.png" alt="" class="w-100 d-block d-md-none">
+            </div>
+            <div class="col-6 p-0"><img src="./img/logo_ptv.svg" alt="" class="w-100"></div>
           </div>
         </div>
         <div class="col-33 d-flex justify-content-center">
-          <div class="col-9"><img src="./img/logo_marines.svg" alt="" class="w-100"></div>
+          <div class="col-30 col-md-9"><a href="javascript:;"><img src="./img/logo_marines.svg" alt=""
+                class="w-100"></a></div>
         </div>
       </div>
     </div>
-    <p>千葉ロッテマリーンズ公式サイト Copyright © Chiba Lotte Marines All Rights Reserved.</p>
+    <p class="fs-7">千葉ロッテマリーンズ公式サイト <br class="d-sm-block d-md-none">Copyright © Chiba Lotte Marines All Rights
+      Reserved.</p>
   </footer>
 
   <!-- bootstrap cdn js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'click'
+      });
+    })
+  </script>
+
 </body>
 
 </html>
