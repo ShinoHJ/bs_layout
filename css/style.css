@@ -84,7 +84,7 @@ span.bg-team::before {
 }
 
 #game-info {
-  background-image: url(/img/top/game_bg_default.jpg);
+  background-image: url(./../img/top/game_bg_default.jpg);
   background-size: 100%;
 }
 
