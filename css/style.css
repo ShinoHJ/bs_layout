@@ -151,7 +151,7 @@ ul {
   background-repeat: no-repeat;
 }
 
-#gourmetModal-1, #gourmetModal-2 {
+#gourmetModal-1 .modal-content, #gourmetModal-2 .modal-content {
   z-index: 100;
 }
 
