@@ -1837,6 +1837,9 @@ $pre-color: null !default;
 
 
 // 自訂追加
+#nav {
+  z-index: 9999;
+}
 a>img {
   &:hover {
     opacity: 0.75;
