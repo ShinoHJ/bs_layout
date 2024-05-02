@@ -1838,7 +1838,7 @@ $pre-color: null !default;
 
 // 自訂追加
 #nav {
-  z-index: 9999;
+  z-index: 99;
 }
 a>img {
   &:hover {
@@ -1878,10 +1878,6 @@ li.nav-item:hover::after {
 // #team26Wrap li.nav-item:hover::after {
 //   background: RGBA(var(--bs-light-rgb), var(--bs-link-opacity, .75));
 // }
-
-.for-sm {
-  display: none;
-}
 
 
 /*----- badge gackground content for news -----*/
@@ -1988,10 +1984,11 @@ ul {
   background-repeat: no-repeat;
 }
 
+#gourmetModal-1, #gourmetModal-2 {
+  z-index: 100;
+}
+
 @media (max-width: 576px) {
-  .for-sm {
-    display: block;
-  }
   #ourBelief li::before {
     height: 62px;
   }
